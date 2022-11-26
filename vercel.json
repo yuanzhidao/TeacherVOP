@@ -1,3 +1,15 @@
 {
-	"rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
+	"rewrites": [{ "source": "/:path*", "destination": "/index.html" }],
+	"public": true,
+	"headers": [
+		{
+			"source": "/(.*).(ttf|otf|woff2|mp3|jpg|png)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=2592000, immutable"
+				}
+			]
+		}
+	]
 }

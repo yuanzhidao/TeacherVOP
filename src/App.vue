@@ -46,7 +46,8 @@ import { RouterLink, RouterView } from "vue-router";
 	<RouterView />
 
 	<footer>
-		<div class="bg-base-100 shadow-xl rounded-xl my-4 p-4 flex justify-center">
+		<div class="bg-base-100 shadow-xl rounded-xl my-4 p-4 flex justify-center flex-col items-center">
+			<p>&copy; 2022 iYuan.</p>
 			<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">沪ICP备2022026478号-3</a>
 		</div>
 	</footer>
